@@ -141,9 +141,16 @@ p {
 .linknav {
   display: flex;
   align-items: center;
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon {
   margin-right: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon {
   fill: var(--primary-text-color);
@@ -627,8 +634,8 @@ p {
 }
 .button-port {
   border-radius: 4px;
-  /* background-color: var(--primary-bacground-color);
-  color: black; */
+  background-color: var(--primary-bacground-color);
+  color: black;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
