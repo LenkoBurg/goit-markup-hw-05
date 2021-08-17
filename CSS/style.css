@@ -156,6 +156,10 @@ p {
 .linknav-list-left:focus .header-icon {
   fill: var(--accent-color);
 }
+.linknav-list-left {
+  display: flex;
+  align-items: center;
+}
 /* ==================header=================== */
 .bloks {
   height: 120px;
@@ -193,7 +197,6 @@ p {
   letter-spacing: 0.06em;
 }
 .button {
-  font-family: "Roboto";
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
@@ -223,12 +226,13 @@ p {
 .hero .list + .list {
   margin-left: 30px;
 }
-.hero .plist {
+.plist {
   font-size: 14px;
   line-height: 24px;
   margin-top: 0px;
   margin-bottom: 0px;
   width: 270px;
+  color: var(--primary-text-color);
 }
 .hero .headlines {
   font-size: 14px;
@@ -623,17 +627,21 @@ p {
 }
 .button-port {
   border-radius: 4px;
-  background-color: var(--primary-bacground-color);
-  color: black;
+  /* background-color: var(--primary-bacground-color);
+  color: black; */
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
   cursor: pointer;
   border: 0;
   padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .button-port:hover,
-button-port:focus {
+.button-port:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
   cursor: pointer;
