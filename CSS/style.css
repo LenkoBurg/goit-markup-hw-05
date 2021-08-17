@@ -120,6 +120,9 @@ p {
 
 .linknav-list {
   margin-left: 50px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-nav {
   display: flex;
@@ -146,9 +149,14 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.link {
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header-icon {
   margin-right: 10px;
-  transition-property: color;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -367,6 +375,9 @@ p {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-team:hover,
 .social-link-team:focus {
@@ -377,6 +388,9 @@ p {
 }
 .social-icon-team {
   fill: #afb1b8;
+  transition-property: bacground-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link + .social-link {
   margin-left: 10px;
@@ -412,6 +426,7 @@ p {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
+  transition-duration: 250ms;
   border-radius: 4px;
 }
 .client-link:hover .client-icon,
@@ -424,6 +439,9 @@ p {
 }
 .client-icon {
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ==================FOOTER====================== */
 .downfooter {
@@ -501,6 +519,9 @@ p {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link-footer:hover,
 .social-link-footer:focus {
@@ -558,6 +579,9 @@ p {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .linkp:hover,
